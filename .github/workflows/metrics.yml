@@ -12,7 +12,7 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Grants permissions to push back to the repo
     steps:
       # Step 1: Generate the Stats Graph
       - name: General Stats
@@ -25,7 +25,7 @@ jobs:
           output_action: commit
           committer_branch: stats-output
           plugin_languages: no
-          theme: dracula
+          config_theme: dracula
 
       # Step 2: Generate the Languages Graph
       - name: Language Stats
@@ -40,4 +40,4 @@ jobs:
           config_timezone: Asia/Kolkata
           output_action: commit
           committer_branch: languages-output
-          theme: dracula
+          config_theme: dracula
