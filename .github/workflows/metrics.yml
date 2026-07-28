@@ -1,0 +1,43 @@
+name: Generate Profile Metrics
+
+on:
+  schedule:
+    - cron: "0 */12 * * *" # Runs every 12 hours
+  workflow_dispatch: # Allows manual trigger
+  push:
+    branches:
+      - main
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # Step 1: Generate the Stats Graph
+      - name: General Stats
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filename: stats.svg
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata
+          output_action: commit
+          committer_branch: stats-output
+          plugin_languages: no
+          theme: dracula
+
+      # Step 2: Generate the Languages Graph
+      - name: Language Stats
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filename: languages.svg
+          base: ""
+          plugin_languages: yes
+          plugin_languages_ignored: html, css
+          plugin_languages_details: bytes-size, percentage
+          config_timezone: Asia/Kolkata
+          output_action: commit
+          committer_branch: languages-output
+          theme: dracula
