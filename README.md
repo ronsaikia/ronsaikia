@@ -2,7 +2,7 @@
 
 ###
 
-<img src="https://github.com/ronsaikia/ronsaikia/raw/stats-output/stats.svg" width="100%" alt="Chiranjib's GitHub Stats">
+<img src="https://github.com/ronsaikia/ronsaikia/raw/stats-output/stats.svg" width="49%" alt="Chiranjib's GitHub Stats">
 <br clear="both">
 
 ###
