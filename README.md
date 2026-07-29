@@ -2,8 +2,10 @@
 
 ###
 
-<img src="https://github.com/ronsaikia/ronsaikia/raw/stats-output/stats.svg" width="49%" alt="Chiranjib's GitHub Stats">
-<br clear="both">
+<div align="center">
+  <img src="https://github.com/ronsaikia/ronsaikia/raw/stats-output/stats.svg" width="49%" align="top" alt="General Stats">
+  <img src="https://github.com/ronsaikia/ronsaikia/raw/languages-output/languages.svg" width="49%" align="top" alt="Language Stats">
+</div>
 
 ###
 
