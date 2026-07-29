@@ -18,20 +18,19 @@ jobs:
       - name: General Stats
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           filename: stats.svg
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Kolkata
           output_action: commit
           committer_branch: stats-output
           plugin_languages: no
-          config_theme: dracula
 
       # Step 2: Generate the Languages Graph
       - name: Language Stats
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           filename: languages.svg
           base: ""
           plugin_languages: yes
@@ -40,4 +39,3 @@ jobs:
           config_timezone: Asia/Kolkata
           output_action: commit
           committer_branch: languages-output
-          config_theme: dracula
