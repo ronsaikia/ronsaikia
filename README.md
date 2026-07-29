@@ -2,13 +2,8 @@
 
 ###
 
-<div data-importer="stats" align="center">
-  <div align="center">
-  <img src="https://github.com/ronsaikia/ronsaikia/raw/stats-output/stats.svg" width="400px" alt="General Stats">
-  <br><br>
-  <img src="https://github.com/ronsaikia/ronsaikia/raw/languages-output/languages.svg" width="400px" alt="Language Stats">
-  </div>
-</div>
+<img src="https://github.com/ronsaikia/ronsaikia/raw/stats-output/stats.svg" width="100%" alt="Chiranjib's GitHub Stats">
+<br clear="both">
 
 ###
 
