@@ -4,9 +4,9 @@
 
 <div data-importer="stats" align="center">
   <div align="center">
-  <img src="https://github.com/ronsaikia/ronsaikia/raw/stats-output/stats.svg" width="800px" alt="General Stats">
+  <img src="https://github.com/ronsaikia/ronsaikia/raw/stats-output/stats.svg" width="500px" alt="General Stats">
   <br><br>
-  <img src="https://github.com/ronsaikia/ronsaikia/raw/languages-output/languages.svg" width="800px" alt="Language Stats">
+  <img src="https://github.com/ronsaikia/ronsaikia/raw/languages-output/languages.svg" width="500px" alt="Language Stats">
   </div>
 </div>
 
